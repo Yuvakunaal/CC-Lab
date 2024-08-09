@@ -6,10 +6,12 @@
 class Array :
     def __init__(self,array):
         self.array = array
+
     def traversal(self):
         print("\nTravelling : ")
         for i in self.array:
             print(i)
+
     def insertion(self,position,element):
         print("\nInserting :-")
         if len(self.array) < position :
@@ -18,6 +20,7 @@ class Array :
         self.array.insert(position,element)
         print("Inserted successfully...")
         return
+    
     def deletion_at_index(self,position):
         print("\nDeleting element using index :-")
         if not self.array:
@@ -26,6 +29,7 @@ class Array :
         a = self.array.pop(position)
         print(f"deleted successfully (index = {a})")
         return
+    
     def deletion_at_value(self,element):
         print("\nDeleting element :-")
         if not self.array:
@@ -37,6 +41,7 @@ class Array :
             return
         print("Cant delete : Element not found !")
         return
+    
     def search(self,element):
         print("\nSearching :-")
         if not self.array:
@@ -47,6 +52,7 @@ class Array :
             return
         print("Element not found in array !")
         return
+    
     def update(self,position,element):
         print("\nUpdating :-")
         if not self.array:
@@ -58,6 +64,7 @@ class Array :
         self.array[position] = element
         print(f"Updated = {element} at index = {position}")
         return
+    
     def display(self):
         print(f"\nArray = {self.array}")
 
@@ -72,6 +79,7 @@ def runTask1():
     array.update(2,200)
     array.display()
 # runTask1()
+
 
 # Task - 2 
 # Write a python program to find the largest element in an array using function
@@ -91,6 +99,7 @@ def runTask2():
     res = findmax(a)
     print(res)
 # runTask2()
+
 
 # Task - 3
 # Write a python program to find factors of a number
